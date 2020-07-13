@@ -49,7 +49,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.37</version>
+      <version>8.0.16</version>
       <scope>runtime</scope>
     </dependency>
     <!-- baomidou的mybatis-plus依赖  注：mybatis-plus自动的维护了mybatis以及mybatis-spring的依赖，在springboot中这三者不能同时的出现，避免版本的冲突 -->

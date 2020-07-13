@@ -1,0 +1,22 @@
+# 端口
+server:
+  port: 6030
+
+spring:
+  datasource:
+    name: spring_security
+    # 数据库url
+    url: jdbc:mysql://localhost:3306/spring_security?serverTimezone=CTT&characterEncoding=utf-8&useSSL=false
+    # 数据库账号
+    username: root  
+    # 数据库密码
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  main:
+    allow-bean-definition-overriding: true  # 当遇到同样名字的时候，是否允许覆盖注册
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  # 注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.springboot-springsecurity.entity  # 注意：对应实体类的路径
+  configuration:                              
+    map-underscore-to-camel-case: true              #开启Mybatis下划线命名转驼峰命名
